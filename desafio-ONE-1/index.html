@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio ONE 1</title>
+</head>
+<body>
+    <div class="voltar"><a href="/">Voltar</a></div>
+    <h1>Criptator</h1><a id="copyResult" style="color: green;"></a>
+    <div class="criptatorTitle">
+        <a class="textC">Texto comum</a><br>
+        <a class="textD">Texto convertido em base64</a>
+    </div>
+    <div class="criptatorBox">
+        <textarea id="input" class="textarea" cols="60" rows="20"></textarea>
+        <a id="change" class="change"><img src="seta.png" title="Criptor"></a>
+        <textarea id="output" class="textareaD" cols="60" rows="20"></textarea>
+    </div>
+    <p>
+        <button class="copiar" style="vertical-align:top;">Copy Textarea</button>
+        <button class="limpar" onclick="limparCaixas()">Limpar</button>
+    </p>
+    <script src="scripts.js"></script>
+</body>
+</html>
