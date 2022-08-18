@@ -19,7 +19,7 @@ body{
     text-align: left;
 }
 .textC{
-    padding-left: 1rem;
+    padding-left: 4rem;
     padding-right: 23rem;
     background-color: transparent;
 }
@@ -32,8 +32,9 @@ body{
     resize:none;
     outline:none;
     color: #d7e60dc5;
+    padding: 0.5rem;
     border-radius: 1rem;
-    border: 1rem transparent solid;
+    border: 0.1rem #d7e60dc5 solid;
     background-color: #252525b6;
 }
 .change{
@@ -63,12 +64,22 @@ body{
     cursor: pointer;
 }
 .voltar{
-    padding-top: 0rem;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 4rem;
+    top: 1rem;
+    left: 1rem;
     width: 4rem;
     height: 4rem;
-    background-color: red;
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border-radius: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    border: 0.1rem #d7e60dc5 solid;
+}
+a, a::selection{
+    color: #d7e60dc5;
+    text-decoration: none;
 }
