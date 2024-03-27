@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"> <!-- estilo da pagina -->
+    <link rel="stylesheet" href="/estrelas.css"> <!-- estilo das estrelas de fundo -->
+
+    <title>Asgardian Date X1</title>
+</head>
+<body>
+    <div id="stars"></div> <!-- estrela do plano de fundo -->
+
+    <div class="menu">
+        <input type="date" name="dataX" id="dataX">
+        <button id="converterX">Converter</button>
+        <h3 id="dataConvertidaX">ano/mês/dia</h3>
+    </div>
+
+    <script>
+        // aqui fica a logica em js da pagina
+        // porem o conversor fica no arquivo separado
+        // script.js
+        // aproveite :3
+
+        dataXis = document.getElementById('dataX');
+        converterXis = document.getElementById('converterX');
+        dataConvertidaX = document.getElementById('dataConvertidaX');
+
+        converterXis.addEventListener("click", ()=> {
+            dataConvertidaX.innerText = asgardia(dataXis.value);
+        });
+
+    </script>
+    <script src="/script.js"></script> <!--  o conversor ta aq :D -->
+    <script src="/estrelas.js"></script> <!-- script gerador de estrelas -->
+</body>
+</html>
